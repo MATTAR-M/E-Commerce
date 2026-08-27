@@ -1,0 +1,25 @@
+import { resolve } from "path";
+import { config } from "dotenv";
+const NODE_ENV = process.env.NODE_ENV || 'development';
+config({ path: resolve(process.cwd(), `.env.${NODE_ENV}`) });
+export const PORT: number = Number(process.env.PORT || 3000);
+export const MONGO_URI: string = process.env.MONGO_URI!;
+export const MONGO_LOCAL: string = process.env.MONGO_LOCAL!;
+export const SALT_ROUNDS = process.env.SALT_ROUNDS;
+export const SECRET_KEY_USER = process.env.SECRET_KEY_USER;
+export const SECRET_KEY_ADMIN = process.env.SECRET_KEY_ADMIN;
+export const Refresh_SECRET_KEY_USER = process.env.Refresh_SECRET_KEY_USER;
+export const Refresh_SECRET_KEY_ADMIN = process.env.Refresh_SECRET_KEY_ADMIN;
+export const EMAIL = process.env.EMAIL;
+export const PASS = process.env.PASS;
+export const API_SEC = process.env.API_secret;
+export const CLIENT_ID = process.env.CLIENT_ID;
+export const PREFIX_USER = process.env.PREFIX_USER;
+export const PREFIX_ADMIN = process.env.PREFIX_ADMIN;
+export const redisURL = process.env.redis_URL;
+export const AWS_REGION = process.env.AWS_REGION!;
+export const AWS_BUCKET_NAME = process.env.AWS_BUCKET_NAME!;
+export const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY!;
+export const AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY!;
+export const JWT_TOKEN = process.env.JWT_TOKEN
+export const JWT_REFRESH_TOKEN = process.env.JWT_REFRESH_TOKEN

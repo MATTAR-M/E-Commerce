@@ -20,7 +20,6 @@ git clone https://github.com/diaaeldeenn/E-Commerce-Nest-Js
 cd E-Commerce-Nest-Js
 npm install
 ```
-*[cite: 9]*
 
 **2. Configure Environment Variables:**
 Create a `.env.development` or `.env.production` file in the root directory and add the following variables[cite: 1, 2]:
@@ -42,7 +41,6 @@ STRIPE_SECRET_KEY=sk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 Redis_URL=redis://your_redis_url
 ```
-*[cite: 1, 2]*
 
 ## 🏃‍♂️ Running the Application
 
@@ -52,12 +50,10 @@ Start the server using the built-in NestJS CLI scripts[cite: 7]:
 ```bash
 npm run start:dev
 ```
-*[cite: 7]*
 
 **Production Mode:**
 ```bash
 npm run build
 npm run start:prod
 ```
-*[cite: 7]*
 
